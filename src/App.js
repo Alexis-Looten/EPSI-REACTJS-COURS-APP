@@ -17,7 +17,7 @@ function App() {
       </ul>
 
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home name="Dio" age="21" color="red" sizeText="36">Un truc là</Home>}/>
         <Route path="/reference" element={<Reference/>}/>
         <Route path="/reference/:id" element={<Reference/>}/>
         <Route path="/contact" element={<Contact/>}/>
