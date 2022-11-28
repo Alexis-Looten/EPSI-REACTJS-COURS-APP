@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import Reference from './pages/Reference';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 import {Routes, Route, Link} from 'react-router-dom';
 
@@ -18,7 +19,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/reference" element={<Reference/>}/>
+        <Route path="/reference/:id" element={<Reference/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
     </>
   );
