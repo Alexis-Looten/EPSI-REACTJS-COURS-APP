@@ -4,6 +4,7 @@ import CycleDeVie from "../components/CycleDeVie";
 import State from "../components/Hook/State";
 import Effect from "../components/Hook/Effect";
 import Memo from "../components/Hook/Memo";
+import Ref from "../components/Hook/Ref";
 
 function Home(props){
     const divStyle = {
@@ -24,6 +25,8 @@ function Home(props){
             <Effect/>
             <br/><br/>
             <Memo/>
+            <br/><br/>
+            <Ref/>
         </div>
         {/* <MatchExo></MatchExo> */}
         </>
