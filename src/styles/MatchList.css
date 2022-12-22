@@ -1,3 +1,11 @@
+.light .itemMatch{
+    background-color: rgb(204, 204, 204);
+}
+
+.dark .itemMatch{
+    background-color: rgba(50, 50, 50, .4);
+}
+
 .itemMatch{
     display: flex;
     justify-content: center;

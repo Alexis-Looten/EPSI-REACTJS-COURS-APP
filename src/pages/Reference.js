@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import MatchList from "../components/MatchList";
+import ThemeContext from "../context/ThemeContext";
 
 const DEFAULT_MATCH = [
     {
@@ -49,14 +50,19 @@ const Reference = () => {
 
     const { id } = useParams();
     return (
-        <div className="Reference">
-            ZA WARUDOOOO ! Toki wo tomare {id} Byōkan !!
-            <br/>
-            {score}
-            <br/>
-            <button onClick={newScore}>But !!</button>
-            {matchList}
-        </div>
+        <ThemeContext.Consumer>
+            {context => (
+                <div className={`Reference ${context}`}>
+                    
+                ZA WARUDOOOO ! Toki wo tomare {id} Byōkan !!
+                <br/>
+                {score}
+                <br/>
+                <button onClick={newScore}>But !!</button>
+                {matchList}
+            </div>
+            )}
+        </ThemeContext.Consumer>
     );
     
 }

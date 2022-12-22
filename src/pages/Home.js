@@ -9,6 +9,7 @@ import Compo from "../components/HOC/Compo";
 import ClickCount from "../components/HOC/ClickCount";
 import OverCount from "../components/HOC/HoverCount";
 import Form2 from "../components/Form2";
+import CompoContext from "../context/CompoContext";
 
 function Home(props){
     const divStyle = {
@@ -22,9 +23,7 @@ function Home(props){
             He is {props.age} years old !
             <p style={divStyle}><i>{props.children}</i></p>
             <br/>
-            <ClickCount/>
-            <OverCount/>
-            <Form2/>
+            <CompoContext/>
         </div>
         {/* <MatchExo></MatchExo> */}
         </>
