@@ -15,7 +15,7 @@ class CycleDeVie extends Component{
             this.setState({
                 date : new Date()
             });
-        }, 2000)
+        }, 1000)
     };
 
     componentDidUpdate(){

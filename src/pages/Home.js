@@ -5,6 +5,10 @@ import State from "../components/Hook/State";
 import Effect from "../components/Hook/Effect";
 import Memo from "../components/Hook/Memo";
 import Ref from "../components/Hook/Ref";
+import Compo from "../components/HOC/Compo";
+import ClickCount from "../components/HOC/ClickCount";
+import OverCount from "../components/HOC/HoverCount";
+import Form2 from "../components/Form2";
 
 function Home(props){
     const divStyle = {
@@ -18,15 +22,9 @@ function Home(props){
             He is {props.age} years old !
             <p style={divStyle}><i>{props.children}</i></p>
             <br/>
-            <CycleDeVie/>
-            <br/><br/>
-            <State/>
-            <br/><br/>
-            <Effect/>
-            <br/><br/>
-            <Memo/>
-            <br/><br/>
-            <Ref/>
+            <ClickCount/>
+            <OverCount/>
+            <Form2/>
         </div>
         {/* <MatchExo></MatchExo> */}
         </>
